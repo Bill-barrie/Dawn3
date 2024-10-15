@@ -16,7 +16,7 @@
   color: #000000;
 }
 .custom.product-form__input--pill input[type=radio]:checked+label {
-  background-color: #F68F1E;
+  background-color: #F68F1E1A;
   border-color: #F68F1E;
 
 }
