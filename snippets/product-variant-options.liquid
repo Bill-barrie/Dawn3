@@ -91,10 +91,10 @@
       {% endif %}
       {{ input_dataset }}
     >
-    {% comment %} <label for="{{ input_id }}">
+    {% comment %} {% comment %} <label for="{{ input_id }}">
       {{ value -}}
       {{ label_unavailable }}
-    </label> {% endcomment %}
+    </label> {% endcomment %} {% endcomment %}
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"
