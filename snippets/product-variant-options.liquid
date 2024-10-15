@@ -91,15 +91,18 @@
       {% endif %}
       {{ input_dataset }}
     >
-      {% if option.name == "Bundle"%}
-        <div class="custom-bundle-card">
-
+    {% if option.name == 'Bundle' %}
+      <div class="custom-bundle-card">
+        <div class="custom-bundle-card-image-wrapper">
+          {{ value }}
         </div>
-      {% endif %}
-   {% comment %} <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
-    </label>  {% endcomment %}
+      </div>
+    {% comment %} {% else %}
+      <label for="{{ input_id }}">
+        {{ value -}}
+        {{ label_unavailable }}
+      </label> {% endcomment %}
+    {% endif %}
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"
