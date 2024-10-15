@@ -117,12 +117,12 @@
       {{ value }}
       {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
           {{ variant_for_value }}
-      {% comment %} <div class="custom-bundle-card">
+      <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
-          {% comment %} {%- assign variant_for_value = product.variants | where: 'material', value | first -%}
-          {{ variant_for_value }} {% endcomment %}
+           {%- assign variant_for_value = product.variants | where: 'material', value | first -%}
+          {{ variant_for_value }} 
         </div>
-      </div> {% endcomment %}
+      </div> 
      {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
