@@ -21,7 +21,6 @@
 -%}
 
 {%- for value in option.values -%}
-  {{ value }}
   {%- liquid
     assign swatch_focal_point = null
     if value.swatch.image
