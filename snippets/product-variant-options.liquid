@@ -116,16 +116,16 @@
     {% if option.name == 'Bundle' %}
       <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
-          {%- assign variant_for_value = product.variants | where: 'material', value | first -%}
-          {{ variant_for_value }}
+          {% comment %} {%- assign variant_for_value = product.variants | where: 'material', value | first -%}
+          {{ variant_for_value }} {% endcomment %}
         </div>
       </div>
-    {% comment %} {% else %}
+     {% else %}
       <label for="{{ input_id }}">
         {{ value -}}
           {{ target.metafields.custom.variant_card_image | image_url width:300 | image_tag }}
         {{ label_unavailable }}
-      </label> {% endcomment %}
+      </label> 
     {% endif %}
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
