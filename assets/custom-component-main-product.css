@@ -13,6 +13,7 @@
   border-radius: 6px;
   border: 0.5px solid #CCCCCC;
   background-color: white;
+  color: #000000;
 }
 .custom.product-form__input--pill input[type=radio]:checked+label :hover{
   border: 5px solid #F68F1E;
