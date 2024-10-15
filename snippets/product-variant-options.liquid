@@ -125,7 +125,9 @@
       </div> {% endcomment %}
      {% else %}
       <label for="{{ input_id }}">
+        {% if value == 'Watermelon' %}
         🍉
+        {% endif %}
         {{ value -}}
         {{ label_unavailable }}
       </label> 
