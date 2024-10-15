@@ -16,5 +16,6 @@
   color: #000000;
 }
 .custom.product-form__input--pill input[type=radio]:checked+label :visited{
+  background-color: white;
   border: 5px solid #F68F1E;
 }
