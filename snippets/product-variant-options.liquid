@@ -114,12 +114,12 @@
       {{ input_dataset }}
     >
     {% if option.name == 'Bundle' %}
-      <div class="custom-bundle-card">
+      {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
           {% comment %} {%- assign variant_for_value = product.variants | where: 'material', value | first -%}
           {{ variant_for_value }} {% endcomment %}
         </div>
-      </div>
+      </div> {% endcomment %}
      {% else %}
       <label for="{{ input_id }}">
         {{ value -}}
