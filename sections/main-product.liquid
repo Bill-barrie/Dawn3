@@ -668,6 +668,48 @@
           </a>
         </section>
       </div>
+      {% comment %} ----------custom------------- {% endcomment %}
+      <div class="bundle-cards">
+        <!-- Bundle 1 -->
+        <div class="bundle-card">
+          <h3>1 Unit Bundle</h3>
+          <p>Price: <span class="bundle-price">$19.99</span></p>
+          <p>Compare at: <span class="bundle-compare-price">$29.99</span></p>
+          <p>Includes: 1 unit</p>
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <input type="hidden" name="properties[bundle]" value="1 Unit Bundle">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+
+        <!-- Bundle 2 -->
+        <div class="bundle-card">
+          <h3>2 Unit Bundle</h3>
+          <p>Price: <span class="bundle-price">$34.99</span></p>
+          <p>Compare at: <span class="bundle-compare-price">$49.99</span></p>
+          <p>Includes: 2 units</p>
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <input type="hidden" name="properties[bundle]" value="2 Unit Bundle">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+
+        <!-- Bundle 3 -->
+        <div class="bundle-card">
+          <h3>3 Unit Bundle</h3>
+          <p>Price: <span class="bundle-price">$49.99</span></p>
+          <p>Compare at: <span class="bundle-compare-price">$69.99</span></p>
+          <p>Includes: 3 units</p>
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <input type="hidden" name="properties[bundle]" value="3 Unit Bundle">
+            <button type="submit" class="btn">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      {% comment %} ------------custom-end----------------- {% endcomment %}
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
