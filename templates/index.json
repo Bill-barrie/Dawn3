@@ -60,7 +60,6 @@
         },
         "variant_picker_pC8hwQ": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -83,6 +82,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "rating_qz4jNa": {
+          "type": "rating",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -92,7 +96,8 @@
         "variant_picker_pC8hwQ",
         "quantity_selector_G7DyiM",
         "buy_buttons_PrQWbR",
-        "share_FbJNbE"
+        "share_FbJNbE",
+        "rating_qz4jNa"
       ],
       "settings": {
         "product": "natruba-fox-orange",
@@ -103,8 +108,8 @@
         "media_fit": "contain",
         "media_position": "left",
         "image_zoom": "hover",
-        "hide_variants": true,
-        "enable_video_looping": true,
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
