@@ -116,7 +116,8 @@
     {% if option.name == 'Bundle' %}
       <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
-          {{ target.metafields.custom.variant_card_image |image_url width:300 | image_tag }}
+          {{ target }}
+          {{ target.metafields.custom.variant_card_image | image_url width:300 | image_tag }}
         </div>
       </div>
     {% comment %} {% else %}
