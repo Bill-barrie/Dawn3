@@ -117,7 +117,7 @@
       <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
           {{ product.variants }}
-          {%- assign variant_for_value = product.variants | where: '', value | first -%}
+          {%- assign variant_for_value = product.variants | where: 'price', value | first -%}
 
         </div>
       </div>
