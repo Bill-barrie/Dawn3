@@ -118,7 +118,7 @@
       {{ value }}
       {{ compare_at_price }}
       {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
-          {{ product.variants.Bundle }} 
+          {{ product.variants }} 
       {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
          
