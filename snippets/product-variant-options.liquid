@@ -113,7 +113,7 @@
       {% endif %}
       {{ input_dataset }}
     >
-      {{ target }}
+      {{ target.price }}
     {% if option.name == 'Bundle' %}
       {{ value }}
       {% comment %} {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
