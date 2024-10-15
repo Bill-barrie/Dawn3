@@ -116,13 +116,13 @@
       {{ target }}
     {% if option.name == 'Bundle' %}
       {{ value }}
-      {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
-          {{ variant_for_value }}
-      <div class="custom-bundle-card">
+      {% comment %} {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
+          {{ variant_for_value }} {% endcomment %}
+      {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
          
         </div>
-      </div> 
+      </div>  {% endcomment %}
      {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
