@@ -116,9 +116,9 @@
     {% if option.name == 'Bundle' %}
       <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
-          {{ product.variants }}
+          
           {%- assign variant_for_value = product.variants | where: 'price', value | first -%}
-
+          {{ variant_for_value }}
         </div>
       </div>
     {% comment %} {% else %}
