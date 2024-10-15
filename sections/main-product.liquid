@@ -672,7 +672,7 @@
       {% comment %} ----------custom------------- {% endcomment %}
       <div class="bundle-cards">
         <!-- Bundle 1 -->
-        <div class="bundle-card" id="{{product.variants.first.id }}">
+        <div class="bundle-card" id="{{product.variants.first.id }}" >
           <h3>1 Unit Bundle</h3>
           <p>Price: <span class="bundle-price">{{product.selected_or_first_available_variant.price}}</span></p>
           <p>Compare at: <span class="bundle-compare-price">{{product.selected_or_first_available_variant.compare_at_price }}</span></p>
@@ -680,15 +680,11 @@
         </div>
 
         <!-- Bundle 2 -->
-        <div class="bundle-card">
+        <div class="bundle-card" id="{{product.variants.first.id }}" >
           <h3>2 Unit Bundle</h3>
           <p>Price: <span class="bundle-price">$34.99</span></p>
           <p>Compare at: <span class="bundle-compare-price">$49.99</span></p>
           <p>Includes: 2 units</p>
-          <form method="post" action="/cart/add">
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-            <input type="hidden" name="properties[bundle]" value="2 Unit Bundle">
-          </form>
         </div>
 
         <!-- Bundle 3 -->
