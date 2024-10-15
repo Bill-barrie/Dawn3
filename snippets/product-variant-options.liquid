@@ -119,7 +119,7 @@
       {% for variant in product.variants %}
         <p>Price of variant {{ variant.title }}: {{ variant.price | money_with_currency }}</p>
         <p>Compare {{ variant.title }}: {{ variant.compare_at_price }}</p>
-        {{ variant.metafields.custom.variant_card_image | image_url : width:100 | | image_tag }}
+        {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }}
       {% endfor %}
       {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
