@@ -117,15 +117,14 @@
     {% if option.name == 'Bundle' %}
       {{ value }}
       {% for variant in product.variants %}
-        <p>Price of variant {{ variant.title }}: {{ variant.price | money_with_currency }}</p>
-        <p>Compare {{ variant.title }}: {{ variant.compare_at_price }}</p>
-        {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }}
+        {% comment %} <p>Price of variant {{ variant.title }}: {{ variant.price | money_with_currency }}</p>
+        <p>Compare {{ variant.title }}: {{ variant.compare_at_price }}</p> {% endcomment %}
       {% endfor %}
-      {% comment %} <div class="custom-bundle-card">
+      <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
-         
+          {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }}
         </div>
-      </div>  {% endcomment %}
+      </div>  
      {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
