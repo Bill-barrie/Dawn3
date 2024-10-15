@@ -116,7 +116,6 @@
       {{ target.compare-at-price }}
     {% if option.name == 'Bundle' %}
       {{ value }}
-      {{ compare_at_price }}
       {% for variant in product.variants %}
         <p>Price of variant {{ variant.title }}: {{ variant.price | money_with_currency }}</p>
       {% endfor %}
