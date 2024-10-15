@@ -58,6 +58,28 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "inventory_bxE4gp": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "collapsible_tab_tfxWtr": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "rating_gng9f8": {
+          "type": "rating",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -68,7 +90,10 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "inventory_bxE4gp",
+        "collapsible_tab_tfxWtr",
+        "rating_gng9f8"
       ],
       "settings": {
         "enable_sticky_info": true,
