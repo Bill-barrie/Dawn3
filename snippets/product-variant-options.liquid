@@ -116,8 +116,8 @@
       {{ target.compare-at-price }}
     {% if option.name == 'Bundle' %}
       {{ value }}
-      {% comment %} {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
-          {{ variant_for_value }} {% endcomment %}
+      {%- assign variant_for_value = product.variants | where: 'Bundle', value | first -%}
+          {{ variant_for_value }} 
       {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
          
