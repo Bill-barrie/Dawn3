@@ -58,6 +58,14 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "inventory_JkLfzH": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
+          }
         }
       },
       "block_order": [
@@ -68,7 +76,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "inventory_JkLfzH"
       ],
       "settings": {
         "enable_sticky_info": true,
