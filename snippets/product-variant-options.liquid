@@ -21,7 +21,7 @@
 -%}
 
 {%- liquid
-    assign target = product.selected_or_first_available_variant
+  assign target = product.selected_or_first_available_variant
   assign compare_at_price = target.compare_at_price
   assign price = target.price | default: 1999
   assign price_min = product.price_min
@@ -40,7 +40,6 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
-
 
 {%- for value in option.values -%}
   {%- liquid
@@ -113,33 +112,35 @@
       {% endif %}
       {{ input_dataset }}
     >
-      {{ target.compare-at-price }}
+    {{ target['compare-at-price'] }}
     {% if option.name == 'Bundle' %}
       {{ value }}
-      {% comment %} {% for variant in product.variants %}
-        <p>Price of variant ::{{ variant.title }}: {{ variant.price | money_with_currency }}</p>
-        <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price | money_with_currency}}</p> 
-      
-      {% comment %} <div class="custom-bundle-card">
-        <div class="custom-bundle-card-image-wrapper">
-          {% comment %} {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }} {% endcomment %}
-        </div>
-      </div>   {% endcomment %}
-    {% endfor %} {% endcomment %}
-    <label for="{{ input_id }}">
-      {{ value -}}
+      {% comment %}
+        {% for variant in product.variants %}
+            <p>Price of variant ::{{ variant.title }}: {{ variant.price | money_with_currency }}</p>
+            <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price | money_with_currency}}</p>
+
+          {% comment %} <div class="custom-bundle-card">
+            <div class="custom-bundle-card-image-wrapper">
+              {% comment %} {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }} {% endcomment %}
+            </div>
+          </div>   {% endcomment %}
+        {% endfor %}
+      {% endcomment %}
+      <label for="{{ input_id }}">
+        {{ value -}}
         {{ label_unavailable }}
-      </label> 
-     {% else %}
+      </label>
+    {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
-        🍉 
+          🍉
         {% else %}
-        🍋 
+          🍋
         {% endif %}
         {{ value -}}
         {{ label_unavailable }}
-      </label> 
+      </label>
     {% endif %}
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
