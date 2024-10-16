@@ -473,7 +473,7 @@
                 >
                 
                   <div class="guarantee">30 Day Money Back Guarantee</div>
-                </div>
+                  <div>Supercharge your workouts with this all-natural, mushroom and adaptogen-powered pre-workout, engineered for sustained energy, peak performance, and amplified strength.</div>
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
@@ -674,6 +674,7 @@
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
             {%- endcase -%}
+            
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
             {{ 'products.product.view_full_details' | t }}
