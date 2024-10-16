@@ -95,7 +95,7 @@
             %}
               disabled
             {% endif %}
-          >
+          >{{ price | money }}
             <span>
               {%- if product.selected_or_first_available_variant == null -%}
                 {{ 'products.product.unavailable' | t }}
