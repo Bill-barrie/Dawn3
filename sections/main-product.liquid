@@ -463,7 +463,17 @@
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
                   render 'share-button', block: block, share_link: share_url
                 %}
-                <div class="guarantee">30 Day Money Back Guarantee</div>
+                <img
+                  sizes="100vw"
+                  src="{{ section.settings.image | image_url: width: 1500 }}"
+                  loading="lazy"
+                  alt="{{ section.settings.image.alt | escape }}"
+                  width="{{ section.settings.image.width }}"
+                  height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
+                >
+                
+                  <div class="guarantee">30 Day Money Back Guarantee</div>
+                </div>
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
