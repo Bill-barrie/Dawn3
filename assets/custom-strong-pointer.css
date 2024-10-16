@@ -1,3 +1,5 @@
 .custom-strong-pointer-wrap{
     padding: 25px;
+    border-bottom: 0.5px solid #00000033 ;
+    border-top: 0.5px solid #00000033 ;
 }
