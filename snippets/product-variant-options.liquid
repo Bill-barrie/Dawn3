@@ -118,13 +118,13 @@
       {{ value }}
       {% for variant in product.variants %}
         <p>Price of variant ::{{ variant.title }}: {{ variant.price | money_with_currency }}</p>
-        <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price }}</p> 
+        <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price | money_with_currency}}</p> 
       
-      <div class="custom-bundle-card">
+      {% comment %} <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
           {% comment %} {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }} {% endcomment %}
         </div>
-      </div>  
+      </div>   {% endcomment %}
     {% endfor %}
      {% else %}
       <label for="{{ input_id }}">
