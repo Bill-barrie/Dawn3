@@ -41,11 +41,12 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "inventory_JkLfzH": {
+          "type": "inventory",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
           }
         },
         "description": {
@@ -53,18 +54,17 @@
           "settings": {
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "inventory_JkLfzH": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 0,
-            "show_inventory_quantity": false
           }
         }
       },
@@ -74,10 +74,10 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
+        "inventory_JkLfzH",
         "description",
-        "share",
-        "inventory_JkLfzH"
+        "buy_buttons",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
