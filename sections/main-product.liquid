@@ -153,7 +153,7 @@
                       {%- if product.selected_or_first_available_variant.inventory_quantity
                           <= block.settings.inventory_threshold
                       -%}
-                        <span class="svg-wrapper" style="color: rgb(238, 148, 65)">
+                        <span class="svg-wrapper custom-deliver-day" style="color: rgb(238, 148, 65)">
                           {{- 'icon-inventory-status.svg' | inline_asset_content -}}
                         </span>
                         {%- if block.settings.show_inventory_quantity -%}
