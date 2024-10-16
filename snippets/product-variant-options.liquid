@@ -126,6 +126,10 @@
         </div>
       </div>   {% endcomment %}
     {% endfor %} {% endcomment %}
+    <label for="{{ input_id }}">
+      {{ value -}}
+        {{ label_unavailable }}
+      </label> 
      {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
