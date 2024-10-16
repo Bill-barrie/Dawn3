@@ -44,4 +44,5 @@
 .custom.product-form__submit.button{
   background-color: #F68F1E;
   border-radius: 6px;
+  border: none;
 }
