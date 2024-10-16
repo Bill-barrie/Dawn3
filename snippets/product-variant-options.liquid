@@ -117,8 +117,8 @@
     {% if option.name == 'Bundle' %}
       {{ value }}
       {% for variant in product.variants %}
-        <p>Price of variant {{ variant.title }}: {{ variant.price | money_with_currency }}</p>
-        <p>Compare {{ variant.title }}: {{ variant.compare_at_price }}</p> 
+        <p>Price of variant ::{{ variant.title }}: {{ variant.price | money_with_currency }}</p>
+        <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price }}</p> 
       
       <div class="custom-bundle-card">
         <div class="custom-bundle-card-image-wrapper">
