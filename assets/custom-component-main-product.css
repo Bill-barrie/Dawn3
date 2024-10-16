@@ -33,5 +33,11 @@
   font-weight: 500;
   line-height: 22.5px;
   text-align: left;
-
+}
+.custom-deliver-day{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+  text-align: left;
 }
