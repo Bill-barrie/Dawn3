@@ -116,7 +116,7 @@
       {{ target.compare-at-price }}
     {% if option.name == 'Bundle' %}
       {{ value }}
-      {% for variant in product.variants %}
+      {% comment %} {% for variant in product.variants %}
         <p>Price of variant ::{{ variant.title }}: {{ variant.price | money_with_currency }}</p>
         <p>Compare :: {{ variant.title }}: {{ variant.compare_at_price | money_with_currency}}</p> 
       
@@ -125,7 +125,7 @@
           {% comment %} {{ variant.metafields.custom.variant_card_image | image_url : width:100 |  image_tag }} {% endcomment %}
         </div>
       </div>   {% endcomment %}
-    {% endfor %}
+    {% endfor %} {% endcomment %}
      {% else %}
       <label for="{{ input_id }}">
         {% if value == 'Watermelon' %}
