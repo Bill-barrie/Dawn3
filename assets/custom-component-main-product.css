@@ -41,3 +41,7 @@
   line-height: 22.5px;
   text-align: left;
 }
+.custom.product-form__submit.button{
+  background-color: #F68F1E;
+  border-radius: 6px;
+}
