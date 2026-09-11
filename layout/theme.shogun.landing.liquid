@@ -354,8 +354,8 @@ This file can be re-written at any time.
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
     </script>
-<script src="{{%20'predictive-search.js'%20|%20asset_url%20}}" defer></script>
-<script src="{{%20'cart-drawer.js'%20|%20asset_url%20}}" defer></script>
+<script src="{{ renamed_variable_20.predictive-search.js['20'] }}" defer></script>
+<script src="{{ renamed_variable_20.cart-drawer.js['20'] }}" defer></script>
     <style type="text/css">
       body, html {
         width: 100% !important;
@@ -365,3 +365,16 @@ This file can be re-written at any time.
     
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{%20'predictive-search.js'%20|%20asset_url%20}}"
+  to: "{{ renamed_variable_20.predictive-search.js['20'] }}"
+  position: 20902..20954
+- from: "{{%20'cart-drawer.js'%20|%20asset_url%20}}"
+  to: "{{ renamed_variable_20.cart-drawer.js['20'] }}"
+  position: 20985..21031
+{% endcomment %}
